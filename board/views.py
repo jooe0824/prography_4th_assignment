@@ -18,4 +18,4 @@ def list(request):
 
 def view(request, num="1"):
 	article = Article.objects.get(id=num)
-	return render(request, 'view.html', {'article':article})
+	return render(request, 'view.html',{'article':article})
